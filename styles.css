@@ -1,0 +1,37 @@
+html{
+    background-color:#F1EEE9;
+    font-family: 'Titillium Web',sans-serif;
+    text-align: center;
+}
+h1{
+    font-size:xx-large;
+    text-align: center;
+    background-color: #EC994B;
+    color:#15133C;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    color:#5b5d5f;
+    font-size: 1rem;
+    text-align: center;
+}
+
+div.container{
+    text-align: center;
+}
+
+ul.normlist{
+    display: inline-block;
+    text-align: left;
+}
+
+ol.normlist{
+    display: inline-block;
+    text-align: left;
+}
+
+.link{color: EC994B;}
+.saying{color: #15133C;font-style: italic;}
+.mjimg{display:block; border: 5px solid #EC994B; width:50%; margin-left:auto; margin-right: auto;}
