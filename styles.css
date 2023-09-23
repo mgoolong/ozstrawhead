@@ -1,37 +1,47 @@
-html{
-    background-color:#F1EEE9;
-    font-family: 'Titillium Web',sans-serif;
-    text-align: center;
-}
-h1{
-    font-size:xx-large;
-    text-align: center;
-    background-color: #EC994B;
-    color:#15133C;
-}
-h2{
-    font-size: 1.5rem;
-}
-p{
-    color:#5b5d5f;
-    font-size: 1rem;
-    text-align: center;
-}
+html{background-color:#F1EEE9;font-family: 'Titillium Web',sans-serif;text-align: center}
 
-div.container{
-    text-align: center;
-}
+h1{font-size:xx-large;text-align: center;background-color: #EC994B;color:#15133C}
 
-ul.normlist{
-    display: inline-block;
-    text-align: left;
-}
+h2{font-size: 1.5rem}
 
-ol.normlist{
-    display: inline-block;
-    text-align: left;
-}
+p{color:#5b5d5f;font-size: 1rem;text-align: center}
+
+div.container, div.block{text-align: center; padding: 2%;}
+
+div#movingcircle{
+        background-color: #EC994B;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+    }
+
+ul.normlist, ol.normlist{display: inline-block;text-align: left;}
 
 .link{color: EC994B;}
 .saying{color: #15133C;font-style: italic;}
-.mjimg{display:block; border: 5px solid #EC994B; width:50%; margin-left:auto; margin-right: auto;}
+
+/*my profile pciture on about page*/
+#meimg{
+    border-radius: 50%; 
+    width:280px; 
+    height: 280px; 
+    object-fit: cover; 
+    margin-left:auto; 
+    margin-right: auto;}
+
+.img_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.mjimg{
+    width: 100%;
+}
