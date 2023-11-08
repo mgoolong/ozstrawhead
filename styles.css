@@ -4,12 +4,56 @@ body{
     background-color: #7E858B;
 }
 
-h1{font-size:xx-large;text-align: center;background-color: #EC994B;color:#15133C}
+h1{
+        font-size:xx-large;
+        text-align: center;
+        background: linear-gradient(300deg, #81c752,#27b0c2, #f09743,#eb6174);
+        color:#15133C;
+}
+
+.gradientHeader{
+
+        font-size:xxx-large;
+        padding: 2%;
+        text-align: center;
+        background: linear-gradient(300deg, #81c752,#27b0c2, #f09743,#eb6174);
+        color:#15133C;
+        background-size: 180%;
+        animation: gradient-animation 60s ease;     
+
+}
+
+.gradientFooter{    
+    text-align: center;
+    padding: 2%;
+    background: linear-gradient(300deg, #81c752,#27b0c2, #f09743,#eb6174);
+    color:#15133C;
+    background-size: 180%;
+    animation: gradient-animation 60s ease;     
+
+}
+
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
 h2{font-size: 1.5rem}
+
 p{color:#1f262e;font-size: 1rem; text-align: center; margin-left: 5%; margin-right: 5%;}
+
 hr{margin-top: 10px; margin-bottom: 10px;}    
 
 div.flexcontainer{display: inline-flex; align-items: center; justify-content: center;}
+
 div.container, div.block{text-align: center;}
 
 ul.normlist, ol.normlist{display: inline-block;text-align: left;}
@@ -22,7 +66,7 @@ ul.normlist, ol.normlist{display: inline-block;text-align: left;}
     gap: 0.5rem;}
 
 .link{color: EC994B;}
-.saying{color: #0e0952;font-style: italic;}
+.saying{color: #0e0952;font-style: italic; margin: 20px;}
 .mjimg{width: 100%;}
 
 #meimg{
@@ -52,13 +96,22 @@ div#movingcircle{
         background-color: #e4f1fd;
     }
 
-    h1{font-size:large}
+    .gradientHeader{    
+        font-size:x-large;
+    }
+
+    h1{font-size:x-large}
     h2{font-size: 1rem}
     h3{font-size: 1rem}
 
     .img_grid{
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .nav-item{
+        width: 100%;
+        margin-top: none;
     }
 
     p{color:#5b5d5f;margin-left: 10%; margin-right: 10%;}
@@ -79,6 +132,12 @@ div#movingcircle{
     body{
         background-color: #c2cdd7;
     }
+
+    .gradientHeader{    
+        font-size:xx-large;
+    }
+
+    h1{font-size:xx-large;}
 
     p{color:#5b5d5f; margin-left: 10%; margin-right: 10%;}
     
@@ -102,6 +161,12 @@ div#movingcircle{
     body{
         background-color: #a0a9b1;
     }
+
+    .gradientHeader{    
+        font-size:xx-large;
+    }
+
+    h1{font-size:xx-large;}
 
     .navlist{gap: 20px;}
 
